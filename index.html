@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Jeff Brown Yachts — Homepage User Behavior Report</title>
+<title>Jeff Brown Yachts · Homepage User Behavior Report</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@200;300;400;500&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
     height: 11in;
     margin: 24px auto;
     background: var(--paper);
-    padding: 0.45in 0.55in 0.4in;
+    padding: 0.3in 0.5in 0.3in;
     position: relative;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     display: flex;
@@ -49,27 +49,27 @@
     grid-template-columns: auto 1fr auto;
     align-items: end;
     gap: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-bottom: 1.5px solid var(--ocean);
   }
   .brand {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 0.22em;
     color: var(--ocean);
   }
   .brand-logo {
     display: block;
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
   }
   .brand .tag {
     display: block;
     font-family: 'Jost', sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 8.5px;
+    font-size: 12px;
     letter-spacing: 0.04em;
     color: var(--muted);
     margin-top: 6px;
@@ -79,8 +79,8 @@
   .doctitle h1 {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 0.28em;
+    font-size: 21px;
+    letter-spacing: 0.26em;
     color: var(--abyss);
     line-height: 1;
   }
@@ -88,43 +88,44 @@
     font-family: 'Jost', sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 9.5px;
+    font-size: 13px;
     color: var(--clay);
     letter-spacing: 0.04em;
-    margin-top: 4px;
+    margin-top: 6px;
   }
   .meta {
     text-align: right;
-    font-size: 8.5px;
-    letter-spacing: 0.08em;
+    font-size: 12px;
+    letter-spacing: 0.04em;
     color: var(--muted);
-    line-height: 1.5;
+    line-height: 1.55;
   }
   .meta strong {
     color: var(--ocean);
     font-weight: 500;
     letter-spacing: 0.14em;
     display: block;
-    font-size: 8px;
+    font-size: 12px;
     text-transform: uppercase;
+    margin-bottom: 2px;
   }
 
   /* ---------- SECTION TITLES ---------- */
   .sect-title {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 10px;
-    letter-spacing: 0.26em;
+    font-size: 12px;
+    letter-spacing: 0.22em;
     color: var(--ocean);
     text-transform: uppercase;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .sect-title::before {
     content: "";
-    width: 18px;
+    width: 22px;
     height: 1.5px;
     background: var(--clay);
   }
@@ -133,13 +134,13 @@
     font-style: italic;
     font-weight: 300;
     color: var(--clay);
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0;
     margin-right: -4px;
   }
 
   /* ---------- PROBLEM STATS ---------- */
-  .problem { margin-top: 14px; }
+  .problem { margin-top: 10px; }
   .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -147,28 +148,28 @@
   }
   .stat {
     background: var(--sand-light);
-    padding: 12px 12px 10px;
+    padding: 11px 12px 10px;
     border-left: 2.5px solid var(--ocean);
   }
   .stat.alert { border-left-color: var(--clay); }
   .stat .num {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 30px;
     color: var(--ocean);
     letter-spacing: 0.02em;
     line-height: 1;
   }
   .stat.alert .num { color: var(--clay); }
   .stat .label {
-    font-size: 9px;
+    font-size: 12px;
     color: var(--abyss);
     line-height: 1.35;
     margin-top: 6px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
   }
   .stat .source {
-    font-size: 7.5px;
+    font-size: 11px;
     color: var(--muted);
     font-style: italic;
     margin-top: 4px;
@@ -176,56 +177,56 @@
 
   /* ---------- CLICK CHART ---------- */
   .click-chart {
-    margin-top: 16px;
+    margin-top: 12px;
   }
   .chart-frame {
     background: #FFFFFF;
     border: 1px solid var(--rule);
-    padding: 14px 16px 14px 14px;
+    padding: 8px 10px 8px 10px;
     position: relative;
   }
   .chart-context {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 10px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
     border-bottom: 1px dashed var(--rule);
   }
   .chart-context .ctx-left {
-    font-size: 9px;
+    font-size: 12px;
     color: var(--muted);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
   }
   .chart-context .ctx-left strong {
     color: var(--ocean);
     font-weight: 500;
   }
   .chart-context .ctx-right {
-    font-size: 8.5px;
+    font-size: 12px;
     color: var(--muted);
     font-style: italic;
   }
 
   .bar-row {
     display: grid;
-    grid-template-columns: 100px 1fr 70px;
+    grid-template-columns: 145px 1fr 95px;
     align-items: center;
     gap: 10px;
-    padding: 2.5px 0;
+    padding: 2px 0;
   }
   .bar-label {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 8px;
-    letter-spacing: 0.14em;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     color: var(--abyss);
     text-align: right;
     text-transform: uppercase;
   }
   .bar-track {
     position: relative;
-    height: 14px;
+    height: 15px;
     background: transparent;
   }
   .bar-fill {
@@ -237,9 +238,9 @@
   .bar-value {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
-    font-size: 8.5px;
+    font-size: 12px;
     color: var(--muted);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
   }
   .bar-value strong {
     color: var(--abyss);
@@ -248,11 +249,11 @@
   .bar-value.alert strong { color: var(--clay); }
 
   .chart-footnote {
-    margin-top: 10px;
-    padding-top: 8px;
+    margin-top: 8px;
+    padding-top: 6px;
     border-top: 1px dashed var(--rule);
-    font-size: 8.5px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.45;
     color: var(--abyss);
     letter-spacing: 0.01em;
   }
@@ -264,7 +265,7 @@
 
   /* ---------- FINDINGS ---------- */
   .findings {
-    margin-top: 14px;
+    margin-top: 10px;
     flex: 1;
   }
   .find-grid {
@@ -295,26 +296,26 @@
   .find h3 {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 9px;
-    letter-spacing: 0.18em;
+    font-size: 12px;
+    letter-spacing: 0.14em;
     color: var(--ocean);
     text-transform: uppercase;
     margin-bottom: 6px;
-    padding-right: 20px;
+    padding-right: 22px;
     line-height: 1.3;
   }
   .find .body {
-    font-size: 9px;
-    line-height: 1.45;
+    font-size: 13px;
+    line-height: 1.4;
     color: var(--abyss);
     flex: 1;
   }
   .find .proof {
     margin-top: 8px;
-    padding-top: 7px;
+    padding-top: 6px;
     border-top: 1px dashed var(--rule);
-    font-size: 8px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.35;
     color: var(--muted);
     font-style: italic;
   }
@@ -327,19 +328,20 @@
 
   /* ---------- FOOTER ---------- */
   footer.foot {
-    margin-top: 12px;
+    margin-top: 10px;
     padding-top: 8px;
     border-top: 1px solid var(--rule);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 7.5px;
+    font-size: 12px;
     color: var(--muted);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
   }
   footer.foot .anchor {
     font-family: 'Encode Sans Expanded', sans-serif;
-    letter-spacing: 0.22em;
+    font-size: 11px;
+    letter-spacing: 0.18em;
     color: var(--ocean);
   }
 
@@ -353,7 +355,7 @@
     color: var(--paper);
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 0.22em;
     border: none;
     cursor: pointer;
@@ -406,52 +408,53 @@
           <path class="jby-fill" d="M543.1,513.5c3.6-2.3,7-5.1,10.4-8.1,3.4-3.1,6.3-6.4,8.9-9.9,3.1-4.3,4.8-8.1,5.4-11.4.5-3.3-.4-5.9-2.9-7.7-1.8-1.3-3.6-1.5-5.6-.8-1.9.8-4.3,2.3-7,4.7-1.2,1-2.5,2.2-3.9,3.6s-2.9,2.8-4.5,4.3c-1.5,1.5-3.1,2.9-4.7,4.3-1.6,1.4-3.1,2.7-4.6,3.9-1.8,1.4-3.6,2.6-5.2,3.6-1.6,1-3.2,1.6-4.8,1.9-1.6.3-3.1.3-4.5,0-1.5-.3-3-1-4.5-2.1-4.4-3.1-6.4-7.5-6.1-13,.4-5.5,3.2-12,8.4-19.3,1.2-1.6,2.6-3.4,4.2-5.4,1.6-2,3.4-4,5.3-6,1.9-2,3.9-3.9,6.1-5.7,2.1-1.8,4.3-3.3,6.5-4.6l4.8,5.9c-2,1.2-4,2.7-6.1,4.4-2,1.7-3.9,3.5-5.7,5.3s-3.5,3.7-5.1,5.5c-1.6,1.9-2.9,3.6-4.1,5.2-3.4,4.8-5.3,8.9-5.7,12.2-.4,3.3.7,5.9,3.2,7.6,1.7,1.2,3.6,1.6,5.4,1.1,1.9-.5,4.2-2,6.9-4.4,1-.9,2.1-1.9,3.4-3.2,1.3-1.3,2.7-2.6,4.2-4.1,1.5-1.4,3-2.9,4.5-4.3,1.5-1.5,3.1-2.8,4.5-4,1.8-1.5,3.6-2.8,5.4-3.9,1.8-1.1,3.5-1.8,5.2-2.3,1.7-.4,3.4-.5,5-.2,1.7.3,3.3,1,4.9,2.1,2.2,1.5,3.7,3.5,4.5,5.7.9,2.3,1.1,4.8.8,7.5s-1.2,5.7-2.6,8.8c-1.4,3.2-3.3,6.4-5.7,9.7-2.9,4-6,7.6-9.4,10.8s-7,5.9-10.7,8.1l-4.5-5.8Z"/>
         </g>
       </svg>
+      <span class="tag">bespoke brokerage &amp; yacht sales</span>
     </div>
     <div class="doctitle">
       <h1>HOMEPAGE USER BEHAVIOR</h1>
-      <div class="sub">30 days of Microsoft Clarity data - jeffbrownyachts.com</div>
+      <div class="sub">30 days of Microsoft Clarity data &nbsp;·&nbsp; jeffbrownyachts.com</div>
     </div>
     <div class="meta">
       <strong>Reporting Window</strong>
-      Mar 21 - Apr 19, 2026<br>
+      Mar 21 to Apr 19, 2026<br>
       1,742 sessions · 1,178 users<br>
       57% desktop · 37% mobile · 6% tablet
     </div>
   </header>
 
-  <!-- ============ SECTION 01 — HEADLINE STATS ============ -->
+  <!-- ============ SECTION 01 HEADLINE STATS ============ -->
   <section class="problem">
     <div class="sect-title"><span class="sect-num">01</span> HOW VISITORS ARE ENGAGING WITH THE HOMEPAGE TODAY</div>
     <div class="stats">
       <div class="stat alert">
         <div class="num">48.3%</div>
-        <div class="label">Average scroll depth - sharp drop-off begins at 20% of page height</div>
+        <div class="label">Average scroll depth. Sharp drop-off begins at 20% of page height</div>
         <div class="source">All devices, 30-day average</div>
       </div>
       <div class="stat alert">
         <div class="num">~60%</div>
-        <div class="label">Homepage exit rate - visitors leave from the same page they landed on</div>
+        <div class="label">Homepage exit rate. Visitors leave from the same page they landed on</div>
         <div class="source">951 exits / 1,594 entries</div>
       </div>
       <div class="stat alert">
         <div class="num">37.5%</div>
-        <div class="label">Quick-back clicks - signals navigation &amp; comparison friction</div>
+        <div class="label">Quick-back clicks signal navigation and comparison friction</div>
         <div class="source">654 of 1,742 sessions</div>
       </div>
       <div class="stat alert">
         <div class="num">16.8%</div>
-        <div class="label">Dead clicks - visitors clicking elements that don't respond</div>
+        <div class="label">Dead clicks on elements that don't respond when visitors interact</div>
         <div class="source">293 of 1,742 sessions</div>
       </div>
     </div>
   </section>
 
-  <!-- ============ SECTION 02 — CLICK CHART ============ -->
+  <!-- ============ SECTION 02 CLICK CHART ============ -->
   <section class="click-chart">
     <div class="sect-title"><span class="sect-num">02</span> TOP 10 CLICKED ELEMENTS ON THE HOMEPAGE</div>
     <div class="chart-frame">
       <div class="chart-context">
-        <div class="ctx-left">Desktop only - <strong>1,513 total clicks</strong> across <strong>1,308 page views</strong></div>
+        <div class="ctx-left">Desktop only &nbsp;·&nbsp; <strong>1,513 total clicks</strong> across <strong>1,308 page views</strong></div>
         <div class="ctx-right">counts consolidated per destination (nav, burger, footer &amp; dropdown&nbsp;+)</div>
       </div>
 
@@ -518,32 +521,32 @@
 
       <div class="chart-footnote">
         <em>The hamburger menu receives nearly 4&times; more clicks than the next highest destination.</em>
-        Every destination in the top ten except View Inventory is also accessible through that menu - meaning the button itself is the primary path visitors take to reach almost everything else on the site.
+        Every destination in the top ten except View Inventory is also accessible through that menu, meaning the button itself is the primary path visitors take to reach almost everything else on the site.
       </div>
     </div>
   </section>
 
-  <!-- ============ SECTION 03 — FINDINGS ============ -->
+  <!-- ============ SECTION 03 FINDINGS ============ -->
   <section class="findings">
-    <div class="sect-title" style="margin-top:14px"><span class="sect-num">03</span> PATTERNS ACROSS THE ENTIRE VISIT</div>
+    <div class="sect-title"><span class="sect-num">03</span> PATTERNS ACROSS THE ENTIRE VISIT</div>
     <div class="find-grid">
 
       <div class="find" data-num="01">
         <h3>Navigation Is<br>The #1 Action</h3>
-        <div class="body">The most-clicked element on the homepage is the mechanism that <em>reveals</em> where users can go next. Visitors are not deciding between the menu and other homepage features - they are opening the menu to find them.</div>
-        <div class="proof"><strong>526 clicks on the hamburger</strong> - nearly 4&times; any individual destination · 9 of the top 10 destinations are reachable from that menu.</div>
+        <div class="body">The most-clicked element on the homepage is the mechanism that <em>reveals</em> where users can go next. Visitors are not deciding between the menu and other homepage features; they are opening the menu to find them.</div>
+        <div class="proof"><strong>526 clicks on the hamburger</strong>, nearly 4&times; any individual destination · 9 of the top 10 destinations are reachable from that menu.</div>
       </div>
 
       <div class="find" data-num="02">
         <h3>Only Half the<br>Page Gets Seen</h3>
-        <div class="body">Average scroll depth is below the midpoint and drop-off starts early. The further an element sits from the top of the page, the fewer visitors encounter it - regardless of device.</div>
-        <div class="proof">48.3% avg scroll · drop-off begins at 20% of page height · avg fold ~925px desktop, ~846px tablet, ~702px mobile.</div>
+        <div class="body">Average scroll depth is below the midpoint and drop-off starts early. The further an element sits from the top of the page, the fewer visitors encounter it, regardless of device.</div>
+        <div class="proof"><strong>48.3% avg scroll</strong> · drop-off begins at 20% of page height · avg fold ~925px desktop, ~846px tablet, ~702px mobile.</div>
       </div>
 
       <div class="find" data-num="03">
         <h3>Events Earn Traffic<br>On Their Own</h3>
         <div class="body">Event pages pull significant traffic despite minimal prominence on the current homepage. The Newport Beach Boat Show page alone outperformed About Us, Brands, and all but two individual boat listings.</div>
-        <div class="proof"><strong>495 sessions</strong> on the Newport Beach event page - the 3rd most-visited page on the entire site.</div>
+        <div class="proof"><strong>495 sessions</strong> on the Newport Beach event page, the 3rd most-visited page on the entire site.</div>
       </div>
 
       <div class="find" data-num="04">
@@ -557,8 +560,7 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="foot">
-    <div>Source: Microsoft Clarity - jeffbrownyachts.com/ - 30-day window ending 04/19/2026</div>
-    <div class="anchor">JEFF BROWN YACHTS - BESPOKE BROKERAGE &amp; YACHT SALES</div>
+    <div>Source: Microsoft Clarity &nbsp;·&nbsp; jeffbrownyachts.com/ &nbsp;·&nbsp; 30-day window ending 04/19/2026</div>
   </footer>
 
 </div>
