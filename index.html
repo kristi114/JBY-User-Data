@@ -22,25 +22,22 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   html, body {
-    background: #EEE;
+    background: #E8E4DB;
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     color: var(--abyss);
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .page {
-    width: 8.5in;
-    height: 11in;
-    margin: 24px auto;
+    max-width: 1180px;
+    margin: 40px auto;
     background: var(--paper);
-    padding: 0.3in 0.5in 0.3in;
+    padding: 48px 56px 44px;
     position: relative;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
   }
 
   /* ---------- HEADER ---------- */
@@ -48,57 +45,57 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: end;
-    gap: 18px;
-    padding-bottom: 8px;
+    gap: 24px;
+    padding-bottom: 20px;
     border-bottom: 1.5px solid var(--ocean);
   }
   .brand {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 0.22em;
     color: var(--ocean);
   }
   .brand-logo {
     display: block;
-    width: 62px;
-    height: 62px;
+    width: 78px;
+    height: 78px;
   }
   .brand .tag {
     display: block;
     font-family: 'Jost', sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.04em;
     color: var(--muted);
-    margin-top: 6px;
+    margin-top: 8px;
     text-transform: none;
   }
   .doctitle { text-align: center; }
   .doctitle h1 {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 21px;
-    letter-spacing: 0.26em;
+    font-size: 30px;
+    letter-spacing: 0.22em;
     color: var(--abyss);
-    line-height: 1;
+    line-height: 1.05;
   }
   .doctitle .sub {
     font-family: 'Jost', sans-serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--clay);
     letter-spacing: 0.04em;
-    margin-top: 6px;
+    margin-top: 10px;
   }
   .meta {
     text-align: right;
-    font-size: 12px;
-    letter-spacing: 0.04em;
+    font-size: 13px;
+    letter-spacing: 0.03em;
     color: var(--muted);
-    line-height: 1.55;
+    line-height: 1.6;
   }
   .meta strong {
     color: var(--ocean);
@@ -107,25 +104,25 @@
     display: block;
     font-size: 12px;
     text-transform: uppercase;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
   }
 
   /* ---------- SECTION TITLES ---------- */
   .sect-title {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.22em;
     color: var(--ocean);
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
+    gap: 14px;
+    margin-bottom: 18px;
   }
   .sect-title::before {
     content: "";
-    width: 22px;
+    width: 28px;
     height: 1.5px;
     background: var(--clay);
   }
@@ -134,67 +131,67 @@
     font-style: italic;
     font-weight: 300;
     color: var(--clay);
-    font-size: 13px;
+    font-size: 17px;
     letter-spacing: 0;
     margin-right: -4px;
   }
 
-  /* ---------- PROBLEM STATS ---------- */
-  .problem { margin-top: 10px; }
+  /* ---------- HEADLINE STATS ---------- */
+  .problem { margin-top: 36px; }
   .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 16px;
   }
   .stat {
     background: var(--sand-light);
-    padding: 11px 12px 10px;
-    border-left: 2.5px solid var(--ocean);
+    padding: 22px 22px 20px;
+    border-left: 3px solid var(--ocean);
   }
   .stat.alert { border-left-color: var(--clay); }
   .stat .num {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 44px;
     color: var(--ocean);
     letter-spacing: 0.02em;
     line-height: 1;
   }
   .stat.alert .num { color: var(--clay); }
   .stat .label {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--abyss);
-    line-height: 1.35;
-    margin-top: 6px;
+    line-height: 1.45;
+    margin-top: 12px;
     letter-spacing: 0.01em;
   }
   .stat .source {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--muted);
     font-style: italic;
-    margin-top: 4px;
+    margin-top: 8px;
   }
 
   /* ---------- CLICK CHART ---------- */
-  .click-chart {
-    margin-top: 12px;
-  }
+  .click-chart { margin-top: 40px; }
   .chart-frame {
     background: #FFFFFF;
     border: 1px solid var(--rule);
-    padding: 8px 10px 8px 10px;
+    padding: 24px 28px;
     position: relative;
   }
   .chart-context {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 8px;
-    padding-bottom: 6px;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
     border-bottom: 1px dashed var(--rule);
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .chart-context .ctx-left {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--muted);
     letter-spacing: 0.02em;
   }
@@ -203,22 +200,22 @@
     font-weight: 500;
   }
   .chart-context .ctx-right {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--muted);
     font-style: italic;
   }
 
   .bar-row {
     display: grid;
-    grid-template-columns: 145px 1fr 95px;
+    grid-template-columns: 180px 1fr 120px;
     align-items: center;
-    gap: 10px;
-    padding: 2px 0;
+    gap: 16px;
+    padding: 5px 0;
   }
   .bar-label {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.1em;
     color: var(--abyss);
     text-align: right;
@@ -226,7 +223,7 @@
   }
   .bar-track {
     position: relative;
-    height: 15px;
+    height: 20px;
     background: transparent;
   }
   .bar-fill {
@@ -238,7 +235,7 @@
   .bar-value {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--muted);
     letter-spacing: 0.02em;
   }
@@ -249,11 +246,11 @@
   .bar-value.alert strong { color: var(--clay); }
 
   .chart-footnote {
-    margin-top: 8px;
-    padding-top: 6px;
+    margin-top: 18px;
+    padding-top: 14px;
     border-top: 1px dashed var(--rule);
-    font-size: 12px;
-    line-height: 1.45;
+    font-size: 14px;
+    line-height: 1.55;
     color: var(--abyss);
     letter-spacing: 0.01em;
   }
@@ -263,59 +260,155 @@
     font-weight: 400;
   }
 
-  /* ---------- FINDINGS ---------- */
-  .findings {
-    margin-top: 10px;
-    flex: 1;
+
+  /* ---------- SCROLL DEPTH ---------- */
+  .scroll-depth { margin-top: 40px; }
+  .scroll-chart-frame {
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 24px 28px 20px;
   }
+  .scroll-chart-context {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--rule);
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .scroll-chart-context .ctx-left {
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+  .scroll-chart-context .ctx-left strong { color: var(--ocean); font-weight: 500; }
+  .scroll-chart-context .ctx-right { font-size: 13px; color: var(--muted); font-style: italic; }
+  .scroll-svg { width: 100%; display: block; }
+  .scroll-callouts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--rule);
+  }
+  .scroll-callout {
+    padding: 0 0 0 16px;
+    border-left: 2.5px solid var(--ocean);
+  }
+  .scroll-callout.clay { border-left-color: var(--clay); }
+  .scroll-callout .sc-num {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1;
+    color: var(--ocean);
+    letter-spacing: 0.02em;
+  }
+  .scroll-callout.clay .sc-num { color: var(--clay); }
+  .scroll-callout .sc-label {
+    font-size: 13px;
+    color: var(--abyss);
+    line-height: 1.45;
+    margin-top: 6px;
+  }
+  .scroll-callout .sc-source {
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+    margin-top: 4px;
+  }
+
+  /* ---------- ATTENTION CURVE ---------- */
+  .attention { margin-top: 40px; }
+  .attention-frame {
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    padding: 24px 28px;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 32px;
+    align-items: center;
+  }
+  .attention-chart {
+    width: 100%;
+    height: 180px;
+    display: block;
+  }
+  .attention-callout {
+    border-left: 3px solid var(--clay);
+    padding: 6px 0 6px 20px;
+  }
+  .attention-callout .big {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: var(--clay);
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+  .attention-callout .lead {
+    font-size: 14px;
+    color: var(--abyss);
+    line-height: 1.5;
+    margin-top: 12px;
+  }
+  .attention-callout .lead strong {
+    color: var(--ocean);
+    font-weight: 500;
+  }
+
+  /* ---------- FINDINGS ---------- */
+  .findings { margin-top: 40px; }
   .find-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 16px;
   }
   .find {
     background: #FFFFFF;
     border: 1px solid var(--rule);
-    padding: 11px 11px 10px;
+    padding: 20px 20px 18px;
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 140px;
   }
   .find::before {
     content: attr(data-num);
     position: absolute;
-    top: 8px;
-    right: 10px;
+    top: 14px;
+    right: 18px;
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 28px;
     color: var(--sand);
     line-height: 1;
   }
   .find h3 {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.14em;
     color: var(--ocean);
     text-transform: uppercase;
-    margin-bottom: 6px;
-    padding-right: 22px;
+    margin-bottom: 12px;
+    padding-right: 32px;
     line-height: 1.3;
   }
   .find .body {
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.5;
     color: var(--abyss);
     flex: 1;
   }
   .find .proof {
-    margin-top: 8px;
-    padding-top: 6px;
+    margin-top: 16px;
+    padding-top: 12px;
     border-top: 1px dashed var(--rule);
-    font-size: 12px;
-    line-height: 1.35;
+    font-size: 13px;
+    line-height: 1.45;
     color: var(--muted);
     font-style: italic;
   }
@@ -328,56 +421,52 @@
 
   /* ---------- FOOTER ---------- */
   footer.foot {
-    margin-top: 10px;
-    padding-top: 8px;
+    margin-top: 40px;
+    padding-top: 20px;
     border-top: 1px solid var(--rule);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 13px;
     color: var(--muted);
     letter-spacing: 0.02em;
+    flex-wrap: wrap;
+    gap: 12px;
   }
   footer.foot .anchor {
     font-family: 'Encode Sans Expanded', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.18em;
     color: var(--ocean);
   }
 
-  /* ---------- PRINT ---------- */
-  .print-btn {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    padding: 10px 18px;
-    background: var(--ocean);
-    color: var(--paper);
-    font-family: 'Encode Sans Expanded', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.22em;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 980px) {
+    .page { padding: 32px 28px; margin: 20px auto; }
+    header.masthead { grid-template-columns: 1fr; text-align: center; gap: 16px; }
+    .brand, .meta { text-align: center; }
+    .brand-logo { margin: 0 auto; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .find-grid { grid-template-columns: repeat(2, 1fr); }
+    .attention-frame { grid-template-columns: 1fr; gap: 20px; }
+    .doctitle h1 { font-size: 24px; letter-spacing: 0.18em; }
+    .bar-row { grid-template-columns: 130px 1fr 100px; gap: 10px; }
   }
-  .print-btn:hover { background: var(--ocean-dark); }
 
-  @media print {
-    html, body { background: #FFF; }
-    .page {
-      margin: 0;
-      box-shadow: none;
-      page-break-after: always;
-    }
-    .print-btn { display: none; }
-    @page { size: letter; margin: 0; }
+  @media (max-width: 560px) {
+    .page { padding: 24px 20px; }
+    .stats { grid-template-columns: 1fr; }
+    .find-grid { grid-template-columns: 1fr; }
+    .chart-frame, .attention-frame { padding: 18px 16px; }
+    .bar-row { grid-template-columns: 110px 1fr 90px; gap: 8px; }
+    .bar-label { font-size: 11px; letter-spacing: 0.06em; }
+    .stat .num { font-size: 38px; }
+    .attention-callout .big { font-size: 40px; }
+    .doctitle h1 { font-size: 20px; }
   }
 </style>
 </head>
 <body>
-<button class="print-btn" onclick="window.print()">PRINT / SAVE PDF</button>
-
 <div class="page">
 
   <!-- ============ MASTHEAD ============ -->
@@ -408,6 +497,7 @@
           <path class="jby-fill" d="M543.1,513.5c3.6-2.3,7-5.1,10.4-8.1,3.4-3.1,6.3-6.4,8.9-9.9,3.1-4.3,4.8-8.1,5.4-11.4.5-3.3-.4-5.9-2.9-7.7-1.8-1.3-3.6-1.5-5.6-.8-1.9.8-4.3,2.3-7,4.7-1.2,1-2.5,2.2-3.9,3.6s-2.9,2.8-4.5,4.3c-1.5,1.5-3.1,2.9-4.7,4.3-1.6,1.4-3.1,2.7-4.6,3.9-1.8,1.4-3.6,2.6-5.2,3.6-1.6,1-3.2,1.6-4.8,1.9-1.6.3-3.1.3-4.5,0-1.5-.3-3-1-4.5-2.1-4.4-3.1-6.4-7.5-6.1-13,.4-5.5,3.2-12,8.4-19.3,1.2-1.6,2.6-3.4,4.2-5.4,1.6-2,3.4-4,5.3-6,1.9-2,3.9-3.9,6.1-5.7,2.1-1.8,4.3-3.3,6.5-4.6l4.8,5.9c-2,1.2-4,2.7-6.1,4.4-2,1.7-3.9,3.5-5.7,5.3s-3.5,3.7-5.1,5.5c-1.6,1.9-2.9,3.6-4.1,5.2-3.4,4.8-5.3,8.9-5.7,12.2-.4,3.3.7,5.9,3.2,7.6,1.7,1.2,3.6,1.6,5.4,1.1,1.9-.5,4.2-2,6.9-4.4,1-.9,2.1-1.9,3.4-3.2,1.3-1.3,2.7-2.6,4.2-4.1,1.5-1.4,3-2.9,4.5-4.3,1.5-1.5,3.1-2.8,4.5-4,1.8-1.5,3.6-2.8,5.4-3.9,1.8-1.1,3.5-1.8,5.2-2.3,1.7-.4,3.4-.5,5-.2,1.7.3,3.3,1,4.9,2.1,2.2,1.5,3.7,3.5,4.5,5.7.9,2.3,1.1,4.8.8,7.5s-1.2,5.7-2.6,8.8c-1.4,3.2-3.3,6.4-5.7,9.7-2.9,4-6,7.6-9.4,10.8s-7,5.9-10.7,8.1l-4.5-5.8Z"/>
         </g>
       </svg>
+      <span class="tag">bespoke brokerage &amp; yacht sales</span>
     </div>
     <div class="doctitle">
       <h1>HOMEPAGE USER BEHAVIOR</h1>
@@ -525,9 +615,122 @@
     </div>
   </section>
 
-  <!-- ============ SECTION 03 FINDINGS ============ -->
+
+  <!-- ============ SECTION 03 SCROLL DEPTH ============ -->
+  <section class="scroll-depth">
+    <div class="sect-title"><span class="sect-num">03</span> SCROLL DEPTH DROP-OFF</div>
+    <div class="scroll-chart-frame">
+      <div class="scroll-chart-context">
+        <div class="ctx-left">Desktop only &nbsp;·&nbsp; <strong>1,325 page views</strong> tracked</div>
+        <div class="ctx-right">% of visitors still on page at each scroll depth</div>
+      </div>
+
+      <svg class="scroll-svg" viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Y-axis gridlines -->
+        <line x1="80" y1="20" x2="880" y2="20" stroke="#D8D2C4" stroke-width="0.5" stroke-dasharray="4,3"/>
+        <line x1="80" y1="65" x2="880" y2="65" stroke="#D8D2C4" stroke-width="0.5" stroke-dasharray="4,3"/>
+        <line x1="80" y1="110" x2="880" y2="110" stroke="#D8D2C4" stroke-width="0.5" stroke-dasharray="4,3"/>
+        <line x1="80" y1="155" x2="880" y2="155" stroke="#D8D2C4" stroke-width="0.5" stroke-dasharray="4,3"/>
+        <line x1="80" y1="200" x2="880" y2="200" stroke="#D8D2C4" stroke-width="0.8"/>
+        <!-- Y-axis baseline -->
+        <line x1="80" y1="20" x2="80" y2="200" stroke="#D8D2C4" stroke-width="0.8"/>
+
+        <!-- Cliff zone highlight (0-20% scroll) -->
+        <rect x="80" y="20" width="160" height="180" fill="#C46B46" opacity="0.07"/>
+
+        <!-- Fold reference line -->
+        <line x1="240" y1="20" x2="240" y2="200" stroke="#C46B46" stroke-width="1" stroke-dasharray="4,3"/>
+
+        <!-- Area under curve -->
+        <path d="M 80,20.0 80,20.0 L 120,20.0 L 160,22.2 L 200,87.0 L 240,117.6 L 280,126.4 L 320,132.5 L 360,138.8 L 400,148.3 L 440,158.8 L 480,163.3 L 520,164.9 L 560,166.5 L 600,168.0 L 640,168.7 L 680,170.8 L 720,172.6 L 760,174.3 L 800,177.7 L 840,181.5 L 880,186.3 L 880,200 L 80,200 Z" fill="#41647B" opacity="0.35"/>
+
+        <!-- Line -->
+        <path d="M 80,20.0 80,20.0 L 120,20.0 L 160,22.2 L 200,87.0 L 240,117.6 L 280,126.4 L 320,132.5 L 360,138.8 L 400,148.3 L 440,158.8 L 480,163.3 L 520,164.9 L 560,166.5 L 600,168.0 L 640,168.7 L 680,170.8 L 720,172.6 L 760,174.3 L 800,177.7 L 840,181.5 L 880,186.3" fill="none" stroke="#41647B" stroke-width="2"/>
+
+        <!-- Cliff point dot handled in annotation block -->
+
+        <!-- End point dot -->
+        <circle cx="880" cy="186.32" r="4" fill="#41647B"/>
+
+        <!-- Y-axis labels -->
+        <text x="74" y="24" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="end">100%</text>
+        <text x="74" y="69" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="end">75%</text>
+        <text x="74" y="114" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="end">50%</text>
+        <text x="74" y="159" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="end">25%</text>
+        <text x="74" y="204" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="end">0%</text>
+        <text x="40" y="118" font-family="Jost, sans-serif" font-size="11" fill="#7C7668" text-anchor="middle" transform="rotate(-90 40 118)" font-style="italic">visitors remaining</text>
+
+        <!-- X-axis labels -->
+        <text x="80"  y="220" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="middle">0%</text>
+        <text x="280" y="220" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="middle">25%</text>
+        <text x="480" y="220" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="middle">50%</text>
+        <text x="680" y="220" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="middle">75%</text>
+        <text x="880" y="220" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="middle">100%</text>
+        <text x="480" y="238" font-family="Jost, sans-serif" font-size="12" fill="#7C7668" text-anchor="middle" font-style="italic">scroll depth (% of page)</text>
+
+        <!-- Cliff annotation — long leader to upper-right open space -->
+        <line x1="202" y1="84" x2="430" y2="42" stroke="#C46B46" stroke-width="1"/>
+        <circle cx="202" cy="87" r="5" fill="#C46B46"/>
+        <text x="436" y="37" font-family="Encode Sans Expanded, sans-serif" font-size="11" fill="#C46B46" letter-spacing="0.5" text-anchor="start">LARGEST SINGLE DROP-OFF</text>
+        <text x="436" y="53" font-family="Jost, sans-serif" font-size="12" fill="#C46B46" text-anchor="start">37% of visitors leave between 10% and 15% scroll</text>
+
+        <!-- Fold annotation — below and right of fold line, in clear space -->
+        <text x="248" y="152" font-family="Jost, sans-serif" font-size="11" fill="#C46B46" font-style="italic">avg fold (~20%)</text>
+        <text x="248" y="167" font-family="Jost, sans-serif" font-size="11" fill="#C46B46" font-style="italic">54% already gone</text>
+
+        <!-- End annotation -->
+        <text x="874" y="176" font-family="Jost, sans-serif" font-size="12" fill="#41647B" text-anchor="end">7.6% reach the full page</text>
+
+      </svg>
+
+      <!-- Callout strip below chart -->
+      <div class="scroll-callouts">
+        <div class="scroll-callout clay">
+          <div class="sc-num">37%</div>
+          <div class="sc-label">of visitors exit between 10% and 15% scroll, the steepest single drop on the page</div>
+          <div class="sc-source">1,309 visitors at 10% → 832 at 15%</div>
+        </div>
+        <div class="scroll-callout clay">
+          <div class="sc-num">54%</div>
+          <div class="sc-label">of visitors are already gone before reaching the average fold at 20% scroll</div>
+          <div class="sc-source">607 of 1,325 remain at 20% scroll</div>
+        </div>
+        <div class="scroll-callout">
+          <div class="sc-num">7.6%</div>
+          <div class="sc-label">of visitors scroll to the very bottom, where Events and "How Can We Help" live</div>
+          <div class="sc-source">101 of 1,325 reach 100% scroll</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 04 ATTENTION CURVE ============ -->
+  <section class="attention">
+    <div class="sect-title"><span class="sect-num">04</span> WHERE SESSION TIME ACTUALLY GETS SPENT</div>
+    <div class="attention-frame">
+      <svg class="attention-chart" viewBox="0 0 700 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="525" y="0" width="175" height="86" fill="#C46B46" opacity="0.09"/>
+        <line x1="0" y1="86" x2="700" y2="86" stroke="#D8D2C4" stroke-width="0.8"/>
+        <line x1="525" y1="4" x2="525" y2="86" stroke="#C46B46" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <path d="M 0,86 L 35,83.95 L 70,84.36 L 105,84.54 L 140,84.87 L 175,80.79 L 210,80.79 L 245,84.65 L 280,84.90 L 315,85.61 L 350,86.21 L 385,86.40 L 420,86.46 L 455,86.09 L 490,85.75 L 525,71.38 L 560,66.85 L 595,40.40 L 630,20.90 L 665,4.29 L 700,59.43 L 700,86 L 0,86 Z" fill="#41647B" opacity="0.42"/>
+        <path d="M 0,86 L 35,83.95 L 70,84.36 L 105,84.54 L 140,84.87 L 175,80.79 L 210,80.79 L 245,84.65 L 280,84.90 L 315,85.61 L 350,86.21 L 385,86.40 L 420,86.46 L 455,86.09 L 490,85.75 L 525,71.38 L 560,66.85 L 595,40.40 L 630,20.90 L 665,4.29 L 700,59.43" fill="none" stroke="#41647B" stroke-width="1.3"/>
+        <circle cx="665" cy="4.29" r="3" fill="#C46B46"/>
+        <text x="2" y="98" font-family="Jost, sans-serif" font-size="10" fill="#7C7668">0% scrolled</text>
+        <text x="350" y="98" font-family="Jost, sans-serif" font-size="10" fill="#7C7668" text-anchor="middle" font-style="italic">scroll depth</text>
+        <text x="698" y="98" font-family="Jost, sans-serif" font-size="10" fill="#7C7668" text-anchor="end">100% scrolled</text>
+        <text x="612" y="58" font-family="Encode Sans Expanded, sans-serif" font-size="9" letter-spacing="1.2" fill="#C46B46" text-anchor="middle">BOTTOM 25% OF PAGE</text>
+      </svg>
+      <div class="attention-callout">
+        <div class="big">89%</div>
+        <div class="lead">of total session time is spent in the <strong>bottom 25%</strong> of the homepage, where the Events carousel and "How Can We Help" content currently live. Users who reach 95% of the page linger there an average of 17 min 47 sec.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 05 FINDINGS ============ -->
   <section class="findings">
-    <div class="sect-title"><span class="sect-num">03</span> PATTERNS ACROSS THE ENTIRE VISIT</div>
+    <div class="sect-title"><span class="sect-num">05</span> PATTERNS ACROSS THE ENTIRE VISIT</div>
     <div class="find-grid">
 
       <div class="find" data-num="01">
@@ -537,9 +740,9 @@
       </div>
 
       <div class="find" data-num="02">
-        <h3>Only Half the<br>Page Gets Seen</h3>
-        <div class="body">Average scroll depth is below the midpoint and drop-off starts early. The further an element sits from the top of the page, the fewer visitors encounter it, regardless of device.</div>
-        <div class="proof"><strong>48.3% avg scroll</strong> · drop-off begins at 20% of page height · avg fold ~925px desktop, ~846px tablet, ~702px mobile.</div>
+        <h3>Two Audiences,<br>One Page</h3>
+        <div class="body">Most visitors never scroll past the fold, but those who do scroll to the bottom stay a long time. Today the page serves neither audience well: one sees little, the other has to dig for it.</div>
+        <div class="proof">48.3% avg scroll · sharp drop at 20% · avg fold ~925px desktop, ~846px tablet, ~702px mobile.</div>
       </div>
 
       <div class="find" data-num="03">
@@ -560,6 +763,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="foot">
     <div>Source: Microsoft Clarity &nbsp;·&nbsp; jeffbrownyachts.com/ &nbsp;·&nbsp; 30-day window ending 04/19/2026</div>
+    <div class="anchor">JEFF BROWN YACHTS &nbsp;·&nbsp; BESPOKE BROKERAGE &amp; YACHT SALES</div>
   </footer>
 
 </div>
